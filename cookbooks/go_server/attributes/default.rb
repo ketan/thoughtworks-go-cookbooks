@@ -1,0 +1,5 @@
+default[:go][:server][:http_port]    = "8153"
+default[:go][:server][:https_port]   = "8154"
+default[:go][:server][:max_mem]      = "2048m"
+default[:go][:server][:min_mem]      = "1024m"
+default[:go][:server][:max_perm_gen] = "400m"
