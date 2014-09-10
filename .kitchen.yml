@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-6.4
+    driver_config:
+      customize:
+        memory: 1024
+      network:
+        - ["private_network", {ip: "33.33.33.10"}]
+
+suites:
+  - name: go-cdc
+    run_list:
+      - recipe[go_server]
+      - recipe[go_agent]
+    attributes:
