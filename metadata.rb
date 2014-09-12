@@ -1,0 +1,11 @@
+name             'gocd-cookbook'
+maintainer       'ThoughtWorks, Inc.'
+maintainer_email 'go-cd@googlegroups.com'
+license          'Apache 2.0'
+description      'Installs/Configures gocd'
+long_description 'Installs/Configures gocd'
+version          '0.1.0'
+
+depends 'yum'
+depends 'apt'
+depends 'yum-epel'
